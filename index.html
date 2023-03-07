@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms Demonstration</title>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- JS file -->
+    <script src="./index.js" defer></script>
+    <!-- The whole purpose of this script is that when the email/phone checkbox is checked the form to
+    enter the email and phone number will either appear or disappear -->
+    <!-- using defer because my JS deals with DOM manipulations -->
+</head>
+
+<body>
+    <main>
+        <h1> Tables and Forms! </h1>
+        <h2> Cars 4 Sale! </h2>
+        <!-- Start of list of cars -->
+        <table class="car-sale">
+            <thead>
+                <tr>
+                    <th>Image of the Car</th>
+                    <th>Description of the Car</th>
+                    <th>Price</th>
+                    <th>Brand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img alt="BMW M4 Competition"
+                            src="https://images.unsplash.com/photo-1617531653520-4893f7bbf978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1310&q=80">
+                    </td>
+                    <td>
+                        <p>The BMW M4 Competition is a high-performance version of the standard BMW 4 Series. It
+                            features a powerful engine, sport-tuned suspension, and numerous performance upgrades that
+                            make it a thrilling driving experience.</p>
+                    </td>
+                    <td>
+                        <p>$75,695</p>
+                    </td>
+                    <td>
+                        <a title="BMW, Public domain, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:BMW.svg"><img width="512" alt="BMW"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/512px-BMW.svg.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Honda Fit White"
+                            src="https://images.unsplash.com/photo-1609676671207-d021525a635d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80">
+                    </td>
+                    <td>
+                        <p>The Honda Fit is a subcompact car that is known for its practicality, fuel efficiency, and
+                            spacious interior. It offers impressive cargo space, easy maneuverability, and a comfortable
+                            ride, making it a popular choice for urban drivers and small families.</p>
+                    </td>
+                    <td>
+                        <p>$16,190</p>
+                    </td>
+                    <td>
+                        <img class="car-symbol" alt="Honda Logo"
+                            src="https://1000logos.net/wp-content/uploads/2018/03/Honda-logo-768x432.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="MX-5 Miata"
+                            src="https://images.unsplash.com/photo-1661963834896-cbca08d2c189?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                    </td>
+                    <td>
+                        <p>The Mazda MX-5 Miata is a two-seat convertible sports car that has been praised for its
+                            fun-to-drive nature, responsive handling, and affordable price point. It is a popular choice
+                            for enthusiasts who prioritize driving experience over outright performance.</p>
+                    </td>
+                    <td>
+                        <p>$27,825</p>
+                    </td>
+                    <td rowspan="2">
+                        <img class="car-symbol" alt="Mazda Logo"
+                            src="https://1000logos.net/wp-content/uploads/2019/12/Mazda_Logo-768x432.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Mazda CX5"
+                            src="https://images.unsplash.com/photo-1643142313598-3f7469304623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                    </td>
+                    <td>
+                        <p>The Mazda CX-5 is a compact SUV that offers a combination of sporty handling, fuel
+                            efficiency, and upscale interior quality. It features Mazda's signature KODO design
+                            language, and is available with advanced safety features such as adaptive cruise control and
+                            lane departure warning.</p>
+                    </td>
+                    <td>
+                        <p>$25,270</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Toyota RAV4"
+                            src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1531&q=80">
+                    </td>
+                    <td>
+                        <p> The Toyota RAV4 is a popular compact SUV that is known for its reliability, practicality,
+                            and versatility. It offers a comfortable ride, plenty of cargo space, and advanced safety
+                            features such as automatic emergency braking and adaptive cruise control.</p>
+                    </td>
+                    <td>
+                        <p>$26,250</p>
+                    </td>
+                    <td>
+                        <img class="car-symbol" alt="Toyota Logo"
+                            src="https://1000logos.net/wp-content/uploads/2021/04/Toyota-logo-768x432.png">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- End of list of cars -->
+
+        <!-- Start of tic-tac-toe -->
+        <h2> Tic-Tac-Toe! </h2>
+        <table class="tic-tac-toe">
+            <tr>
+                <td class="circle">O</td>
+                <td class="circle">O</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="cross">X</td>
+                <td class="circle">O</td>
+            </tr>
+            <tr>
+                <td class="cross">X</td>
+                <td class="circle">O</td>
+                <td></td>
+            </tr>
+        </table>
+        <!-- End of tic-tac-toe -->
+
+        <!-- start of quiz section -->
+        <section class="quiz-section">
+            <h2>Quiz Time!</h2>
+            <form>
+                <!-- Question 1 -->
+                <p>1. What is 2+2? </p>
+                <input type="radio" id="hotdog" name="question1" value="hotdog">
+                <label for="hotdog"> Hotdog </label><br>
+                <input type="radio" id="22" name="question1" value="22">
+                <label for="22"> 22 </label><br>
+                <input type="radio" id="4" name="question1" value="4">
+                <label for="4"> 4 </label><br>
+                <!-- Question 2 -->
+                <p>2. What is 9+10? </p>
+                <input type="radio" id="21" name="question2" value="21">
+                <label for="21"> 21 </label><br>
+                <input type="radio" id="19" name="question2" value="19">
+                <label for="19"> 19 </label><br>
+                <input type="radio" id="910" name="question2" value="910">
+                <label for="910"> 910 </label><br>
+            </form>
+            <label for="answeredCorrectly"> Only 5% of the population have answered this correctly! </label><br>
+            <meter id="answeredCorrectly" value="0.05">5%</meter><br>
+            <input type="submit" value="Submit">
+        </section>
+        <!-- end of quiz section -->
+
+        <!-- Start of Form Fill out-->
+        <section class="buy-section">
+            <form action="mailto:stevebrine223@gmail.com" enctype="text/plain" method="GET">
+                <h2> Decided? Great! Please out fill out the form so that we can contact you on scheduling an on-site
+                    visit! </h2>
+                <!-- Basic Information -->
+                <label for="fname"> First Name: </label>
+                <br>
+                <input type="text" id="fname" name="fname" placeholder="Victor" required>
+                <br>
+                <label for="lname"> Last Name: </label>
+                <br>
+                <input type="text" id="lname" name="lname" placeholder="Magtanggol" required>
+                <br>
+                <!-- How should we contact them -->
+                <!-- by email -->
+                <input type="checkbox" id="emailSelect" name="emailSelect" value="Email" onclick="emailChecked()">
+                <label for="emailSelect"> Email </label>
+                <!-- By phone -->
+                <input type="checkbox" id="phoneSelect" name="phone" value="Phone" onclick="phoneChecked()">
+                <label for="phoneSelect"> Phone </label>
+
+                <!-- They are inside a div so that it is easily grouped and easily manipulatable using css-->
+                <div id="emailInput">
+                    <label for="email">Enter your email: </label>
+                    <input type="email" id="email" name="email" placeholder="aldenrichards@gmail.com" required>
+                </div>
+
+                <div id="phoneInput">
+                    <label for="telNo"> Enter your phone number: </label>
+                    <input type="tel" id="telNo" name="telNo" placeholder="123-456-7891"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <!-- [0-9]{3}-[0-9]{3}-[0-9]{4} meaning that for the first 6 numbers you can only input between the 0-9 and only requires 3 numbers 
+                        then 4 for the last 4 digit of the phone -->
+                </div>
+
+                <p> What is the car that you would like to see? </p>
+
+                <label for="cars"> Cars: </label>
+                <select id="cars" name="cars">
+                    <option selected value> -- Select a Car -- </option>
+                    <option value="bmw">BMW M3</option>
+                    <option value="honda"> Honda Fit </option>
+                    <option value="mazda1"> Mazda MX-5 Miata </option>
+                    <option value="mazda2">Mazda CX-5</option>
+                    <option value="toyota">Toyota RAV4</option>
+                </select>
+
+                <p> What is your favorite color? </p>
+                <input type="color" value="#ff0000">
+
+                <p><label for="feedback">If you have any suggestion or feedback please fill out the textarea
+                        below.</label></p>
+                <textarea id="feedback" name="feedback" rows="4" cols="50">Please leave your feedback here! </textarea>
+                <br>
+                <input type="submit" value="Submit"><br>
+                <input type="reset" name="reset" value="Clear Form">
+            </form>
+        </section>
+        <!-- End of Form Fill out-->
+    </main>
+    <footer>
+        <p>
+            Project is made by <a target="_blank" href="https://github.com/noonecaresman023">Jerome Michael Dela
+                Cruz</a>
+        </p>
+        <p> BMW Logo: <a href="https://commons.wikimedia.org/wiki/File:BMW.svg">BMW</a>, Public domain, via Wikimedia
+            Commons </p>
+        <p> All other logos came from <a target="_blank" href="https://1000logos.net/">1000logos.net</a></p>
+        <p> Car images came from <a target="_blank" href="https://unsplash.com/"> Unplash.com </a></p>
+    </footer>
+
+</body>
+
+</html>

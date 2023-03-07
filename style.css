@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Nunito', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(255, 231, 213);
+    min-height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4em;
+}
+
+/* These styles purpose is to make it so that whatever element has their id they won't appear when the page loads but
+will only reappear when their input is clicked using JS*/
+#emailInput {
+    display: none;
+}
+
+#phoneInput {
+    display: none;
+}
+
+.car-sale{
+    width: 75%;
+    margin: 3em;
+}
+
+.car-sale,th, td{
+    border: 2px solid black;
+}
+
+.car-sale td{
+    padding: 1em;
+    text-align: center;
+}
+
+h2{
+    color: red;
+}
+
+/* All images */
+img{
+    width: 100%;
+}
+
+.quiz-section, .buy-section{
+    margin: 3em;
+}
+
+
+/* The actual tic tac toe table */
+.tic-tac-toe{
+    width: 300px;
+    height: 300px;
+    margin: 3em;
+}
+
+.tic-tac-toe tr td{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    border: solid 1px black;
+    padding: .5em;
+}
+
+/* The O and X of the tic tac toe table */
+.circle{
+    color: red;
+}
+
+.cross{
+    color: blue;
+}
+
+/* Attribution and Footer styling */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+    background-color: black;    
+    width: 100%;
+    height: 150px;
+    color: gray;
+    /* bottom: 0; */
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
